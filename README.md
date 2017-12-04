@@ -1,85 +1,27 @@
 
 # Scotch Box
 
-## [GET SCOTCH BOX PRO](https://box.scotch.io/pro)
+This repository uses Scotchbox 3 for its development environment.
 
-## [TUTORIAL](https://scotch.io/bar-talk/announcing-scotch-box-30-and-scotch-box-pro)
+# Drupal 8 - monster-api.dev
 
-Just a Dead-Simple Local LAMP/LEMP Stack for Vagrant. **Making Vagrant EASY AS EATING CAKE for developers.**
+The back-end content creation is a standard installation of Drupal 8 
+and has a content type 'Monster Data' set up as a Restful API.
 
-![Scotch Box](https://box.scotch.io/img/pro-banner.png)
+# Vue 2 - bloodthirstymonsters.dev
 
-Scotch Box is a pre-configured Vagrant Box with a full array of features to get you up and running with Vagrant in no time.
+The front-end and main testbed for the site.  I haven't had a chance to play around with 
+a JS framework since AngularJS near the beginning of my coding journey.  After reading up on the pro's
+and cons of Angular2/React/Vue I have decided Vue contains everything I need and less of what I don't.
 
+# Goals
 
-## Scotch Box 3.0!
+This will continue to be updated as the project develops.
+ 
+1. My first ambition was to create a 2 site setup, within a single Scotchbox.
+2. Next I wanted to set up the content-type as a RESTful API and access/display the data at bloodthirstymonsters.dev.
 
-3.0 is finally here!
+With these goals successfully completed I now need to put some more thought into the actual design and ensure I
+make regular commits throughout the whole process!
 
-* Fixed a bunch of issues via Github
-* Upgraded to PHP 7!
-* New website and Docs
-* "Scotch Box Pro" version released with even more features
-* New and improved starter file index.php
-
-
-## License Required?!!!!?!
-
-Still MIT License for the free version. The free version is still a beast.
-
-Pro will help support the project, let you customize some things a bit more, and will help this project survive. If you're super pissed about this, in school, working for good causes, or hurting for cash, then email me at nick@scotch.io so I can get you setup with Pro no charge.
-
-"Scotch Box Pro" is a paid version of the original Scotch Box. [Go Pro Now!](https://box.scotch.io/pro)
-
-
-## Pro Features
-
-* Ubuntu 16.04!
-* PHP 7!
-* MySQL 5.7!
-* NGINX Option!
-* Go lang in the box
-* PHPUnit in the box
-* Yarn
-* Improved email catching with MailHog
-* Vagrant Share working nicely finally
-* The box's build scripts
-* Customize your own boxes in minutes
-* Generally higher versions of things (Node.js, Ruby, etc.)!
-
-![Scotch Box](https://box.scotch.io/img/terminal.png)
-
-## Documentation
-
-* Check out the official docs at: [box.scotch.io](https://box.scotch.io)
-* [Read the getting started article](https://scotch.io/bar-talk/introducing-scotch-box-a-vagrant-lamp-stack-that-just-works)
-* [Read the 2.0 release article](https://scotch.io/bar-talk/announcing-scotch-box-2-0-our-dead-simple-vagrant-lamp-stack-improved)
-* [Read the 2.5 release article](https://scotch.io/bar-talk/announcing-scotch-box-2-5)
-
-
-
-## WPDistillery
-
-![WPDistillery Logo](http://files.flurinduerst.ch/wpdistillery/wpdistillery_bright.png)
-
-WPDistillery is an amazing tool by [Flurin Dürst](https://twitter.com/flurinduerst) that kickstarts your WordPress installation on Scotch Box. It is actively maintained, has lots of features and gets you started in less than 5 minutes.
-
-All you have to do is clone the repo, customize the configuration file to your needs, and <b>vagrant up</b>. WPDistillery will do the rest:
-
-![WPDistillery Preview](http://files.flurinduerst.ch/wpdistillery/wpdistillery_terminal_small.png)
-
-To get started, visit [wpdistillery.org](https://wpdistillery.org) or check out the [Documentation](https://github.com/flurinduerst/WPDistillery).
-
-
-## More Information
-
-Check-out [box.scotch.io](https://box.scotch.io) to learn more.
-
-
-
-
-## Special Thank You
-
-I was dark on this project for a little bit too long, as I got caught up with work and a million other things. I apologize for slowness to release updates. I'm hoping the Pro version can create a bit more motivation to dedicate time to this. I also finally have the build scripts available for download with the Pro version so you all can start addressing bugs yourselves with your own personalized boxes.
-
-Thanks to the community for bug fixes and provisioning tips. Special shout-out to [@maxpou](https://github.com/maxpou) for completely killing it with community responses. 
+3. ... tbc. :)
