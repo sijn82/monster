@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bloodthirstymonsters.dev</title>
+    <!--<link href="/css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />-->
+    <link href="dist-gulp/css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="mainTitle">
+        <h1>bloodthirstymonsters.dev</h1>
+            <h3> {{ warning }}</h3>
+        <input v-model="warning">
+    </div>
+    <div id="homePage">
+        <p> {{ message }} </p>
+    <input v-model="message">
+    </div>
+    <div id="monstersAPI">
+        <h3> Filter these atrocities by temperament.</h3>
+        <select v-model="searchTerm">
+            <option disabled value="">Please select one</option>
+            <option v-for="aggression in aggressions" v-bind:value="aggression.level">{{aggression.level}}</option>
+        </select>
+        <div v-for="monster in monsters" v-bind:class="aggression_level(monster.field_aggression_level[0].value)">
+            <div v-if="aggression_level(monster.field_aggression_level[0].value) == searchTerm  || searchTerm == ''">
+                <h3> {{ monster.title[0].value}}</h3>
+                <!--<h3> {{ searchTerm }}</h3>-->
+                <p> {{ aggression_level(monster.field_aggression_level[0].value) }} </p>
+                <img v-bind:src="monster.field_monster_api_image[0].url">
+                <p class="monster-summary-list"> {{ monster.body[0].summary}}</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="vue.js"></script>
+<script src="js/vue-resource.js"></script>
+<script src="js/default.js"></script>
+</html>

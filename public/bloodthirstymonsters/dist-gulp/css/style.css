@@ -1,0 +1,50 @@
+#mainTitle {
+  width: 100%;
+  text-align: center; }
+  #mainTitle h1 {
+    font-size: 90px;
+    color: #000;
+    position: relative; }
+  #mainTitle h3 {
+    font-size: 50px;
+    color: #0c97ed;
+    position: relative;
+    font-style: italic; }
+
+#homePage {
+  width: 100%;
+  text-align: center; }
+  #homePage p {
+    font-style: oblique;
+    font-size: 75px; }
+  #homePage input {
+    padding: 10px;
+    margin-bottom: 41px; }
+
+#monstersAPI {
+  width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 2px solid grey;
+  padding-top: 30px; }
+  #monstersAPI .Calm h3 {
+    color: #0e69be; }
+  #monstersAPI .Agitated h3 {
+    color: #77b259; }
+  #monstersAPI .Chasey h3 {
+    color: #734c00; }
+  #monstersAPI .Aggressive h3 {
+    color: #a51b00; }
+  #monstersAPI .Bloodthirsty h3 {
+    color: #5f3f3f; }
+  #monstersAPI h3 {
+    font-size: 45px; }
+  #monstersAPI p {
+    font-size: 20px; }
+    #monstersAPI p.monster-summary-list {
+      padding-bottom: 45px;
+      border-bottom: 1px solid grey;
+      padding-top: 45px;
+      margin-top: 45px;
+      border-top: 1px solid grey; }

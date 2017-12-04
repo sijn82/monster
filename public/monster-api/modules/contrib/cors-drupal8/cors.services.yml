@@ -1,0 +1,6 @@
+services:
+  cors.middleware.options:
+    class: Drupal\cors\StackOptionsRequest
+    arguments: ['@kernel']
+    tags:
+      - { name: http_middleware, priority: 400 }
