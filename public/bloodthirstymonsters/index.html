@@ -8,14 +8,22 @@
 </head>
 <body>
     <div id="mainTitle">
-        <h1>bloodthirstymonsters.dev</h1>
+        <h1>bloodthirstymonsters.test</h1>
             <h3> {{ warning }}</h3>
         <input v-model="warning">
     </div>
     <div id="homePage">
-        <p> {{ message }} </p>
-    <input v-model="message">
+        <!--<p> {{ message }} </p>-->
+    <!--<input v-model="message">-->
+        <!--<parallax>-->
+            <!--<img src="img/testposter.png" alt="very cool bg">-->
+        <!--</parallax>-->
+        <h1 v-parallax="0.2">vue-parallax-js</h1>
     </div>
+
+
+
+
     <div id="monstersAPI">
         <h3> Filter these atrocities by temperament.</h3>
         <select v-model="searchTerm">
@@ -35,5 +43,16 @@
 </body>
 <script src="vue.js"></script>
 <script src="js/vue-resource.js"></script>
+<script src="js/vue-parallax-js.js"></script>
+<!--<script>-->
+    <!--import Parallax from 'vue-parallaxy'-->
+    <!--export default {-->
+        <!--components: {-->
+            <!--Parallax-->
+        <!--}-->
+    <!--}-->
+<!--</script>-->
 <script src="js/default.js"></script>
+<!--<script src="dist-gulp/js/bundle.js"></script>-->
+<!--<script src="js/parallax.vue"></script>-->
 </html>

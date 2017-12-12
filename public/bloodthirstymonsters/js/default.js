@@ -1,4 +1,13 @@
-apiURL = "http://monsters-api.dev/api/monster";
+apiURL = "http://monsters-api.test/api/monster";
+
+// // import Parallax from 'parallax.vue'
+// // import Vue and vue-parallax-js
+// import Vue from 'vue'
+// import VueParallaxJs from 'vue-parallax-js'
+//
+// // add vue-parallax-js to vue
+// Vue.use(VueParallaxJs);
+
 
 new Vue ({
     el: '#mainTitle',
@@ -9,12 +18,15 @@ new Vue ({
 
 new Vue ({
     el: '#homePage',
-    data: {
-        message: 'So a bit of both really...'
-    }
+    // data: {
+    //     message: 'Blood thirsty, whole heartedly insane.  Only our deaths will appease them.',
+    // }
+    // components: { Parallax }
+
 });
 
 new Vue ({
+
     el: '#monstersAPI',
     data: {
         monsters: '',
@@ -54,5 +66,5 @@ new Vue ({
     mounted: function () {
         this.getMonsters();
         this.aggression_level();
-    }
+    },
 });

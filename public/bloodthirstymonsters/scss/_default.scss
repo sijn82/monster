@@ -18,6 +18,10 @@
 #homePage {
     width: 100%;
     text-align: center;
+    parallax img {
+        width: 80%;
+        margin: 30px 60px;
+    }
     p {
         font-style: oblique;
         font-size: 75px;

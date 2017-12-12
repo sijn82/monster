@@ -6,6 +6,21 @@ var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var watch = require('gulp-watch');
 
+// added the following code from a tutorial on combining webpack assets with gulp workflow.
+// only doing this to try an get vue-parallaxy to work?!
+// const gulp = require('gulp');
+// const webpack = require('webpack');
+// const webpackStream = require('webpack-stream');
+// const webpackConfig = require('./webpack.config.js');
+
+// gulp.task('js', () => {
+//     gulp.src('./src/js/index.js')
+//         .pipe(webpackStream(webpackConfig), webpack)
+//         .pipe(gulp.dest('./dist/js'));
+// });
+
+// end of extra items for webpack/vue-parallaxy.
+
 // gulp.task('stream', function () {
 //     // Endless stream mode
 //     return watch('css/*.css', { ignoreInitial: false })
@@ -42,6 +57,12 @@ gulp.task('js', function () {
         .pipe(gulp.dest('dist-gulp/js'));
 });
 
+// gulp.task('webpack', function () {
+//     return gulp.src('js/parallax.vue')
+//     .pipe(webpackStream(webpackConfig), webpack)
+//         .pipe(gulp.dest('js'))
+// });
+
 gulp.task('img', function () {
     return gulp.src('img/*')
         .pipe(imagemin())
@@ -63,5 +84,5 @@ gulp.task('watchJS', function(){
 });
 
 gulp.task('default', ['css', 'js', 'img', 'watchSCSS', 'watchJS'
-    // 'stream', 'callback'
+    // 'stream', 'callback',  'webpack',
 ]);
